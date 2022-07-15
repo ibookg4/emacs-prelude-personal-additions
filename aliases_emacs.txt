@@ -1,0 +1,28 @@
+# load in current bash shell this file with source command as 
+# source aliases_emacs.txt or . aliases_emacs.txt
+
+
+# like to have emacs server run in the foreground then I know it's still running
+# there is still the option to load the server at startup as service
+# or just add es to bash_profile
+# short for emacs server
+alias es='/Applications/Emacs.app/Contents/MacOS/emacs --fg-daemon'
+# short for emacs terminal
+alias et='/Applications/Emacs.app/Contents/MacOS/emacs -nw'
+# short for emacs client terminal
+alias ect='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -t'
+# short for emacs client window
+alias ecw='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c'
+# can't use ec it clashes with Eiffel Studio Compiler
+# shorter still e for emacs gui
+alias e='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c'
+
+#load with no .init.el or .emacs
+# short for emacs (gui) with quiet
+alias eq='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c -q'
+#alias vim='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -t'
+#alias vi='/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -t'
+# short for emacstxt more explicit in case you forget
+alias emacstxt='/Applications/Emacs26.app/Contents/MacOS/emacs -nw'
+# default emacs is emacs gui simply call emacs
+alias emacs=/Applications/Emacs.app/Contents/MacOS/emacs
