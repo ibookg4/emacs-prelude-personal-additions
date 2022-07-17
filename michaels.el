@@ -57,9 +57,27 @@
 
 
 ;; stopping emacspeak from loading
-;; (load-file (concat *emacspeak-src-dir* "/lisp/emacspeak-setup.el"))
-;;(load-file "~/emacspeak/lisp/mac-voices.el")
+(load-file (concat *emacspeak-src-dir* "/lisp/emacspeak-setup.el"))
+(load-file "~/emacspeak/lisp/mac-voices.el")
 
 ;;;;(emacspeak-toggle-auditory-icons t)
 ;; some said that this fixed their problems
 ;;(emacspeak-auditory-icon-function 'emacspeak-queue-auditory-icon t)
+
+
+
+;; set keys for Apple keyboard, for emacs in OS X
+;; http://xahlee.info/emacs/emacs/emacs_hyper_super_keys.html
+;;(setq mac-command-modifier 'meta) ; make cmd key do Meta
+;;(setq mac-option-modifier 'super) ; make opt key do Super
+;;(setq mac-control-modifier 'control) ; make Control key do Control
+;;(setq ns-function-modifier 'hyper)  ; make Fn key do Hyper
+;; put the modifiers keys back to normal because emacs-mac breaks super
+;; set keys for Apple keyboard, for emacs in OS X
+(setq mac-command-modifier 'super) ; make cmd key do Meta
+(setq mac-option-modifier 'meta) ; make opt key do Super
+(setq mac-control-modifier 'control) ; make Control key do Control
+;;(setq ns-function-modifier 'hyper)  ; make Fn key do Hyper
+
+;; karabiner return as control
+;; https://emacsredux.com/blog/2017/12/31/a-crazy-productivity-boost-remapping-return-to-control-2017-edition/
