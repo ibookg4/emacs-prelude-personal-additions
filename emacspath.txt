@@ -1,0 +1,2 @@
+export PATH=$PATH:/Applications/Emacs.app/Contents/MacOS
+export PATH=$PATH:/Applications/Emacs.app/Contents/MacOS/bin
