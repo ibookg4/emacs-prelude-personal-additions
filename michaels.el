@@ -82,6 +82,9 @@
 ;; karabiner return as control
 ;; https://emacsredux.com/blog/2017/12/31/a-crazy-productivity-boost-remapping-return-to-control-2017-edition/
 
-
+;; apropos-sort-by-scores is a variable defined in ‘apropos.el’.
+;; Non-nil i.e. t means sort matches by scores; best match is shown first.
+;; This applies to all ‘apropos’ commands except ‘apropos-documentation’.
+;; If value is ‘verbose’, the computed score is shown for each match.
 ;; Apropos can sort results by relevancy. To enable this, add:
 (setq apropos-sort-by-scores t)
