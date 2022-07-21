@@ -81,3 +81,7 @@
 
 ;; karabiner return as control
 ;; https://emacsredux.com/blog/2017/12/31/a-crazy-productivity-boost-remapping-return-to-control-2017-edition/
+
+
+;; Apropos can sort results by relevancy. To enable this, add:
+(setq apropos-sort-by-scores t)
